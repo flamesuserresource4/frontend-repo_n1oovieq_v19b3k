@@ -1,6 +1,6 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
-import { Bot, Car, Palette } from 'lucide-react';
+import { Bot, Car, Palette, ExternalLink } from 'lucide-react';
 
 const Badge = ({ icon: Icon, label }) => (
   <div className="flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm ring-1 ring-white/20">
@@ -32,29 +32,29 @@ export default function Hero() {
           </span>
         </h1>
         <p className="mt-4 max-w-2xl text-pretty text-sm text-neutral-200 sm:text-base md:text-lg">
-          Craft retro-inspired pixel art featuring Transformers, cars, or your most creative ideas. Showcase your talent on your favorite pixel art platform, download your piece, and submit it here.
+          Team up with 2–3 members and create pixel art on Pixilart Rooms. Download your final piece and submit it here to compete.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <a
-            href="#submit"
-            className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-500/20 transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            href="https://www.pixilart.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="group inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30"
           >
-            Submit Your Art
-            <svg
-              className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            Open Pixilart <ExternalLink className="h-4 w-4" />
           </a>
           <a
             href="#details"
+            className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-500/20 transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+          >
+            How It Works
+          </a>
+          <a
+            href="#submit"
             className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30"
           >
-            Event Details
+            Submit Art
           </a>
         </div>
       </div>
